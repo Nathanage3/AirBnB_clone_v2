@@ -50,7 +50,7 @@ This repository contains the initial stage of a student project to build a clone
 
 
 ##### Alternative Syntax
-Users are able to issue a number of console command using an alternative syntax:
+Users are able to issue a number of console commands using an alternative syntax:
 
 	Usage: <class_name>.<command>([<id>[name_arg value_arg]|[kwargs]])
 Advanced syntax is implemented for the following commands: 
