@@ -5,6 +5,7 @@ This module defines a Flask web application with specific routes.
 
 from flask import Flask
 
+
 app = Flask(__name__)
 
 @app.route('/', strict_slashes=False)
