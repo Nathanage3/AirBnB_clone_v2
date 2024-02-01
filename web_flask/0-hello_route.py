@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-flask model for route
+Flask model for route
 """
 from flask import Flask
 
@@ -11,7 +11,7 @@ app = Flask(__name__)
 @app.route('/', strict_slashes=False)
 def hbnb():
     """
-        hbnb route page
+    HBNB route page
     """
     return 'Hello HBNB!'
 
