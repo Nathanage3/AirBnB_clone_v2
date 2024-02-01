@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-Flask model
+flask model
 
 """
 from flask import Flask, render_template
@@ -11,7 +11,7 @@ app = Flask(__name__)
 @app.route('/', strict_slashes=False)
 def hbnb():
     """
-        Route path
+        route path
     """
     return 'Hello HBNB!'
 
@@ -19,7 +19,7 @@ def hbnb():
 @app.route('/hbnb', strict_slashes=False)
 def index():
     """
-        Hbnb path
+        /hbnb path
     """
     return 'HBNB'
 
@@ -44,7 +44,7 @@ def python(text):
 @app.route('/number/<int:n>', strict_slashes=False)
 def number(n):
     """
-        Number path
+        number path
     """
     return "{} is a number".format(n)
 
@@ -52,7 +52,7 @@ def number(n):
 @app.route('/number_template/<int:n>', strict_slashes=False)
 def number_template(n):
     """
-        Template path
+        template path
     """
     return render_template('5-number.html', n=n)
 
