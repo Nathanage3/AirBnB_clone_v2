@@ -1,16 +1,22 @@
 #!/usr/bin/python3
-""" State Module for HBNB project """
+"""
+    Implementation of the State class
+"""
 from models.base_model import BaseModel, Base
-from sqlalchemy import String, Column
+from sqlalchemy import Column, String
 from sqlalchemy.orm import relationship
-import models
+from models.city import City
 from os import getenv
+import models
 
 
 storage_type = getenv("HBNB_TYPE_STORAGE")
 
+
 class State(BaseModel, Base):
-    """ State class """
+    '''
+        Implementation for the State.
+    '''
     __tablename__ = 'states'
     if storage_type == 'db':
         name = Column(String(128), nullable=False)
